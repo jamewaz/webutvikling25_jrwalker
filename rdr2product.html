@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Red Dead Redemption 2</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <style>
             body {
                 font-family: Arial, Helvetica, sans-serif;
@@ -24,31 +25,19 @@
         </style>
     </head>
     <body>
-        <header>
-      <!-- "a"-tag = hyperlenke. 
-           "href" attributtet peker til startsiden "index.html" -->
-      <a href="index.html">LOGO</a>
+         <header id="global-header">
+      <a href="index.html" id="mainlogo">LOGO</a>
 
-      <!-- <nav> definerer en semantisk navigasjonsseksjon -->
       <nav>
-        <!-- <ul> = unordered list, en punktliste for navigasjonslenker -->
         <ul>
-          <!-- <li> = listeelement. Inneholder en lenke tilbake til forsiden -->
-          <li>
-            <!-- <a> = anker-tag for lenker. "href" peker til startsiden -->
-            <a href="index.html">Hjem</a>
-          </li>
-
-          <!-- Andre listeelement med lenke til produktsiden -->
-          <li>
-            <a href="products.html">Produkter</a>
-          </li>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="products.html">Produkter</a></li>
         </ul>
       </nav>
     </header>
         <main>
             <h1>Read Dead Redemption 2</h1>
-            <img src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png" 
+            <img src="img/red.avif" 
             alt="Bilde av RDR2" 
 >
 
@@ -86,6 +75,7 @@
             </table>
 
          </main>
+         <footer>Webutvikling 2025</footer>
 
     </body>
 </html>
