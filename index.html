@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Forside - Dataspæll</title>
-    
+    <link href="icons/css/fontawesome.css" rel="stylesheet" />
+    <link href="icons/css/brands.css" rel="stylesheet" />
+    <link href="icons/css/solid.css" rel="stylesheet" />
+    <link href="icons/css/sharp-thin.css" rel="stylesheet" />
+    <link href="icons/css/sharp-duotone-thin.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
   <!-- <title>Forside - Dataspæll</title> -->
+   <title>Forside - Dataspæll</title>
   </head>
   <body>
     <div id="page-container">
@@ -20,6 +24,10 @@
         <ul>
           <li><a href="index.html">Hjem</a></li>
           <li><a href="products.html">Produkter</a></li>
+
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><i class="fa-solid fa-bars"></i></li>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
         </ul>
       </nav>
     </header>
@@ -35,7 +43,7 @@
       <section class="flex-container">
         <h2>Populære Spæll</h2>
 
-        <article>
+        <article class="product-card">
           <img src="https://upload.wikimedia.org/wikipedia/en/4/48/Metroid_Prime_4_Beyond_cover_art.png" 
           width="250" height="250" alt="Metroid Prime 4">
           <h3>Metroid Prime 4</h3>
@@ -44,7 +52,7 @@
           <a href="product.html" class="btn">Se produkt</a>
           </article>
 
-          <article>
+          <article class="product-card">
             <img src="https://i.redd.it/which-cover-art-do-you-prefer-v0-2seiwn5rw1ka1.jpg?width=620&format=pjpg&auto=webp&s=8e32f28c4af7f47c6cf5c272836479b1321ecf5f" 
             width="250" height="250" alt="Red Dead Redemption 2">
           <h3>Red Dead Redemption 2</h3>
@@ -53,7 +61,7 @@
           <a href="rdr2product.html" class="btn">Se produkt</a>
         </article>
 
-         <article>
+         <article class="product-card">
             <img src="https://static.wikia.nocookie.net/hollowknight/images/1/13/Silksong_cover.jpg/revision/latest?cb=20190214093718" 
             width="250" height="250" alt="Hollow Knight Silksong">
           <h3>Hollow Knight: Silksong</h3>
@@ -62,7 +70,7 @@
           <a href="product.html" class="btn">Se produkt</a>
         </article>
 
-        <article>
+        <article class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw38bsYh4UqJ_2BHe12_TsPdTsYupE4v0BiQ&s" 
             width="250" height="250" alt="Battlefield 6">
           <h3>Battlefield 6</h3>
@@ -70,23 +78,41 @@
           <p>kr 799</p>
           <a href="product.html" class="btn">Se produkt</a>
         </article>
+
+        <article class="product-card">
+            <img src="https://us-east-1-bandai.graphassets.com/AXzioIclSWilEjFtsMJPwz/XViDbobjQ5StAvOyC3Fn" 
+            width="250" height="250" alt="Little Nightmares 3">
+          <h3>Little Nightmares 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
+          <p>kr 399</p>
+          <a href="product.html" class="btn">Se produkt</a>
+        </article>
+
+        <article class="product-card">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202508/2614/1f38b925aa4e1cf9a810b984f9769539e83d86680d735c5d.png" 
+            width="250" height="250" alt="Skate">
+          <h3>Skate.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
+          <p>Gratis</p>
+          <a href="product.html" class="btn">Se produkt</a>
+        </article>
         </section>
         
-        <section class="flex-container">
+        <section class="flex-container flex-grow">
           <h2>Kategorier</h2>
-          <article>
+          <article class="grow-1 category-card">
             <h3><a href="Action.html">Action</a></h3>
         </article>
 
-        <article>
+        <article class="category-card">
             <h3><a href="FPS.html">FPS</a></h3>
         </article>
 
-        <article>
+        <article class="category-card">
             <h3><a href="RPG.html">RPG</a></h3>
         </article>
 
-        <article>
+        <article class="grow-2 category-card">
           <h3><a href="Indie.html">Indie</a></h3>
         </article>
       </section>
