@@ -8,17 +8,16 @@ body{
 }
 
  #page-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;                     
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
     "header header header"
     "main main aside"
     "footer footer footer";
-    gap: 1rem;   
-    
-  }
+  gap: 1rem;
+  padding: 1rem;
+} 
 
 #mainlogo{
     text-transform: uppercase;  
