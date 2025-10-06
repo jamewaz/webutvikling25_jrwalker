@@ -12,11 +12,13 @@
     <title>Nettbutikk</title>
 </head>
 <body>
-      <header>
+      <header id="global-header">
             <nav>
                 <h1><a href="index.html">Logo</a></h1>
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="group">
+                <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <button id="ham"><i class="fa-solid fa-bars"></i></button>
+            </div>
                 <ul id="menu" class="hidden">
                     <li><button id="close">X</button></li>
                     <li><a href="#">Hjem</a></li>
@@ -27,11 +29,11 @@
             </nav>
             <section id="hero">
                 <h2>Building the Future</h2>
-                <a href="#">contact us today</a>
+                <a href="#" class="btn">contact us today</a>
             </section>
          </header>
          <main>
-            <section>
+            <section class="highlight">
                 <figure>
                     <picture>
                          <source media="(min-widt:900px)" srcset="https://picsum.photos/1200/1200">
@@ -42,7 +44,26 @@
                 <h2>Turning Ideas into Reality</h2>
                 <p>Whether it's a brand-new website.</p>
             </section>
+            <section class="highlight" id="services">
+                <h2>Our Services</h2>
+                <article clas="service-card">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h3>SEO</h3>
+                    <p>brim brim patapim</p>
+                </article>
+                <article clas="service-card">
+                    <i class="fa-solid fa-suitcase"></i>
+                    <h3>Website design</h3>
+                    <p>brim brim patapim</p>
+                </article>
+                <article clas="service-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Coding HTML</h3>
+                    <p>brim brim patapim</p>
+                </article>
+            </section>
          </main>
+         <script src="icons/js/script.js"></script>
     
 </body>
 </html>
