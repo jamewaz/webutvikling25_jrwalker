@@ -1,0 +1,49 @@
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    #menu {
+        background-color: rgb(209, 108, 86);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width:600px){
+    #grid-container{
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:"topp topp" 
+                            "hovedinnhold sideinnhold"
+                            "bunn bunn";
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hidden{
+        display: inline-block;
+    }
+
+    #menu{
+        ul{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    #ham{
+        display: none;
+    }
+
+      #close{
+        display: none;
+    }
+}
+
